@@ -1,0 +1,82 @@
+@import '_slick.less';
+
+.nav-sections{
+	margin-bottom: 0px;
+}
+/*# sourceMappingURL=slick.min.css.map */
+
+.caption {
+	position: absolute;
+	top: 30%;
+	left: 5%;
+	text-align: left;
+	padding: 20px;
+	color: #fff;
+	margin: 0;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: .02em;
+	opacity: 0;
+	z-index: 1;
+	transition:all .3s ease;
+	transform:translateY(100px);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.description {
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	text-align: left;
+	padding: 20px;
+	color: #fff;
+	margin: 0;
+	font-size: 15px;
+	/* font-weight: bold; */
+	letter-spacing: .02em;
+	width: 40%;
+	opacity: 0;
+	z-index: 1;
+	transition: all .3s ease;
+	transform: translateY(100px);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.slick-slide.slick-active .description {
+	opacity: 1;
+	transform:translateY(0);
+	transition:all .7s cubic-bezier(0.32, 0.34, 0, 1.62) .6s;
+}
+
+@media only screen and (max-width: 600px) {
+	.description {
+		display: none;
+	}
+	.caption{
+		font-size: 25px;
+		top: 20%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.caption{
+		font-size: 15px;
+		top: 10%;
+	}
+	.slick-dots li{
+		margin: 0 3px;
+	}
+	.slick-dots{
+		bottom: 10px;
+		margin-left: -20px;
+	}
+	.slick-dots li button{
+		width: 10px;
+		height: 10px;
+	}
+}
+.slick-dots li button{
+	font-size:0px;
+}

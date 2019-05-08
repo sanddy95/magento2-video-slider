@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.wrapper">
+            <block class="Techeniac\VideoSlider\Block\VideoSlider" name="banner.view" before="main.content" ifconfig="slider/general/enable_module" cacheable="false" template="Techeniac_VideoSlider::SliderTemplate.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Techeniac_VideoSlider::Slider" title="Video Slider" module="Techeniac_VideoSlider" sortOrder="52" resource="Techeniac_VideoSlider::Slider"/>
+        <add id="Techeniac_VideoSlider::Slider_video" title="Video Slider" module="Techeniac_VideoSlider" sortOrder="10" action="techeniac_videoslider/slider" resource="Techeniac_VideoSlider::Slider_video" parent="Techeniac_VideoSlider::Slider"/>
+        <add id="Techeniac_VideoSlider::Slider_configuration" title="Configuration" module="Techeniac_VideoSlider" sortOrder="99" parent="Techeniac_VideoSlider::Slider" action="adminhtml/system_config/edit/section/slider" resource="Techeniac_VideoSlider::Slider_configuration"/>
+    </menu>
+</config>
