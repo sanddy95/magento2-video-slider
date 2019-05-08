@@ -9,13 +9,15 @@ To install the module follow the steps:
 2. enable module :
 
    go to root directory open terimial and execute the command.
+```
    php bin/magento module:enable Techeniac_VideoSlider
-
+```
 3. upgrade database :
-
+```
    php bin/magento setup:upgrade
-   php bin/magento setup:static-content:deploy -f (if you are in developer mode)
 
+   php bin/magento setup:static-content:deploy -f (if you are in developer mode)
+```
 module has been installed now check in the admin for module.
 
 Admin -> video slider -> video slider (add video slider from youtube/system)
